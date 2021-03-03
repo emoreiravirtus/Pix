@@ -1,5 +1,5 @@
 nav{
-    background: linear-gradient(-45deg, #360033, #0b8793);
+    background: linear-gradient(-45deg, #642B73, #CB356B, #159957, #155799);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     color: white;
@@ -38,11 +38,29 @@ nav a:hover{
 	}
 }
 
+.tag{
+    color: white;
+    background: #a8c0ff;
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    position: absolute;
+    top: 1rem;
+    transform: rotateZ(325deg);
+    padding: 0.2rem 3rem;
+    left: -2rem;
+    clip-path: polygon(100% 100%, 0% 100%, 11% 0, 43% 0, 72% 0, 100% 100%);
+}
+
+img{
+    width: 13rem;
+}
+
 main{
     width: 100%;
 }
 
 .content-wrapper{
+    position: relative;
     margin: 2rem auto;
     max-width: 600px;
     border: 0.1rem solid #00000014;
