@@ -1,10 +1,11 @@
 nav{
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #360033, #0b8793);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     color: white;
     text-align: center;
     height: 3rem;
+
 }
 
 nav a{
@@ -35,4 +36,19 @@ nav a:hover{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+main{
+    width: 100%;
+}
+
+.content-wrapper{
+    margin: 2rem auto;
+    max-width: 600px;
+    border: 0.1rem solid #00000014;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.7rem #0000002b;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1rem solid #237fa0;
 }
