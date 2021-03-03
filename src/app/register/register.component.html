@@ -1,4 +1,33 @@
-<p>
-  first works!
-  {{ id }}
-</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<div class="form__group">
+  <input type="text" class="form__input" id="name" placeholder="Full name" formControlName="name"/>
+  <label for="name" class="form__label">Full Name</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="cpf" placeholder="CPF" formControlName="cpf"/>
+  <label for="name" class="form__label">CPF</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="bank" placeholder="Bank" formControlName="bank"/>
+  <label for="name" class="form__label">Bank</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="pixKey" placeholder="Pix Key" formControlName="pixKey"/>
+  <label for="name" class="form__label">Pix Key</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="amount" placeholder="Amount" formControlName="amount"/>
+  <label for="name" class="form__label">Amount</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="paymentDate" placeholder="Payment Date" formControlName="paymentDate"/>
+  <label for="name" class="form__label">Payment Date</label>
+</div>
+<div class="form__group">
+  <input type="text" class="form__input" id="description" placeholder="Description" formControlName="description"/>
+  <label for="name" class="form__label">Description</label>
+</div>
+
+
+  <button class="button" [disabled]="!form.valid" type="submit">Purchase</button>
+</form>
