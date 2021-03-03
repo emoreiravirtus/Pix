@@ -1,7 +1,7 @@
 nav{
-    background: #DA4453;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     color: white;
     text-align: center;
     height: 3rem;
@@ -9,5 +9,30 @@ nav{
 
 nav a{
     color: white;
-    margin: 1rem;
+    vertical-align: -webkit-baseline-middle;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+
+nav a:hover{
+    background: #fafafa;
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+    color: #237fa0;
+    border-bottom: 1rem solid #237fa0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
